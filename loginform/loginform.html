@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <p align="center">welcome to the login form</p>
+    <div id="forms">
+    <p>Email :</p>
+  <input v-model="email" type="email" placeholder="enter email" required></input>  
+  <p>password:</p>
+  <input v-model="password" type="password" placeholder="enter password" required></input>
+
+  <p>Name:</p>
+  <input v-model="name" type="text" placeholder="enter name" required></input>
+  <br>
+  <p>Gender : </p>
+  <select name="gender" v-model="gender">
+
+    <option>male</option>
+    <option>female</option>
+    <option>other</option>
+</select>
+<p>Country : </p>
+  <input type="radio" name="india" id="">India
+  <input type="radio" name="india" id="">USA
+</select>
+<p>Technology : </p>
+  <input type="checkbox" name="india" id="">c++
+  <input type="checkbox" name="india" id="">java
+  <input type="checkbox" name="india" id="">javascript
+  <input type="checkbox" name="india" id="">vue
+</select>
+
+
+  <br>
+  <br>
+ 
+
+  <button v-on:click="login" type="submit" id="btn">login</button>  
+
+
+</div>
+
+
+<style>
+    body{
+        background-color: silver;
+        margin: 5%;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    #forms{
+        border: solid;
+        border-color: yellow;
+        border-spacing: 5%;
+        padding-left:  5%;
+        padding-bottom: 5%;
+    }
+</style>
+<script src="loginform.js"></script>
+
+</body>
+</html>
